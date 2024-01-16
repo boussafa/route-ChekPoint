@@ -1,0 +1,66 @@
+/* Add these styles to your App.css or create a new CSS file */
+
+.custom-movie-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .custom-movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card-image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .movie-icon {
+    font-size: 2rem;
+  }
+  
+  .rating-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rating-badge {
+    display: flex;
+    align-items: center;
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .star-icon {
+    margin-right: 0.5rem;
+  }
+  
